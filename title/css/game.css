@@ -860,3 +860,55 @@ header .gnb .icon ul li a {
 #footer .sns_list .icon.youtube a {
   background-image: url(../img/f-sns-youtube.svg);
 }
+
+.mopen {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    line-height: 100px;
+  }
+  .header .container {
+    width: auto;
+    margin: 0 auto;
+  }
+  .header h1 {
+    float: left;
+    padding: 0 15px;
+  }
+  .header .gnb {
+    float: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: calc(100% - 90px);
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 50px 15px 0 15px;
+    transition: left 0.5s;
+  }
+  .header .gnb.on {
+    left: 0;
+  }
+  .header .gnb > ul > li {
+    float: none;
+    border-bottom: 1px solid #ddd;
+  }
+  .header .gnb > ul > li > a {
+    display: block;
+    padding: 0 15px;
+    line-height: 40px;
+  }
+
+  .mopen {
+    display: block;
+    font-size: 30px;
+    position: fixed;
+    top: 130px;
+    right: 10px;
+    line-height: 1;
+    cursor: pointer;
+  }
+}
